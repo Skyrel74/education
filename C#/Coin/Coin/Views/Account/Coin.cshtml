@@ -1,0 +1,35 @@
+﻿@model Coin.Models.Datum[]
+
+@{
+    ViewBag.Title = "Coin";
+}
+
+<h2>Coin</h2>
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>Price</th>
+            <th>Change in one hour</th>
+            <th>Change in one day</th>
+            <th>Market cap</th>
+            <th>Last update date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var coin in Model)
+        {
+            <tr>
+                <td>@coin.name</td>
+                <td>@coin.symbol</td>
+                <td>@coin.quote.USD.price</td>
+                <td>@coin.quote.USD.percent_change_1h</td>
+                <td>@coin.quote.USD.percent_change_24h</td>
+                <td>@coin.quote.USD.market_cap</td>
+                <td>@coin.quote.USD.last_updated</td>
+            </tr>
+        }
+    </tbody>
+</table>

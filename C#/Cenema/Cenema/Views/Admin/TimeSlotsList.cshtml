@@ -1,0 +1,44 @@
+﻿@using Cenema.Models
+@model TimeslotGridRow[]
+
+@section SubNav
+{
+    @Html.Partial("SubNavigation", SubNavigationMenu.Timeslots)
+}
+
+<h2 class="admin-heading">Timeslots</h2>
+<div class="admin-add-btn">
+    @Html.ActionLink("Add Time Slot", "AddTimeSlot", "Admin", null,
+    new { @class="btn btn-success btn-block"})
+</div>
+
+<table class="table table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>StartTime</th>
+            <th>Coast</th>
+            <th>Movie</th>
+            <th>Hall</th>
+            <th>Format</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var timeSlot in Model)
+        {
+            <tr>
+                <td>@timeSlot.StartTime</td>
+                <td>@timeSlot.Coast</td>
+                <td>@(timeSlot.Movie?.Title)</td>
+                <td>@(timeSlot.Hall?.Name)</td>
+                <td>@timeSlot.Format</td>
+                <td class="col-lg-2">
+                    @Html.ActionLink("Edit", "EditTimeSlot", "Admin", new { timeSlotId = timeSlot.Id }, 
+                   new { @class = "btn btn-primary btn-block bluebtn" })
+                    @Html.ActionLink("Delete", "RemoveTimeSlot", "Admin",
+                   new { timeSlotId = timeSlot.Id }, new { @class = "btn btn-primary btn-block delete" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

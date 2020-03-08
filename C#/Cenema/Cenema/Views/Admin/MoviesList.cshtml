@@ -1,0 +1,44 @@
+﻿@model Cenema.Models.Domain.Movie[]
+@using Cenema.Models
+
+@section SubNav
+{
+    @Html.Partial("SubNavigation", SubNavigationMenu.Movies)
+}
+
+<h2 class="admin-heading">Movies</h2>
+<div class="admin-add-btn">
+    @Html.ActionLink("Add movie", "AddMovie", "Admin", null, 
+    new { @class="btn btn-success btn-block"})
+</div>
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Poster</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var movie in Model)
+        {
+            <tr>
+                <td>
+                    <img style="max-height: 100px" src="@movie.ImgUrl" />
+                </td>
+                <td>@movie.Title</td>
+                <td>@movie.Description</td>
+                <td class="col-lg-2">
+                    @Html.ActionLink("Edit", "EditMovie", "Admin", new { movieId = movie.Id },
+                   new { @class = "btn btn-primary btn-block bluebtn" })
+                    @Html.ActionLink("Timeslots", "GetMovieTimeSlotsList", "Admin",
+                   new { movieId = movie.Id }, new { @class = "btn btn-primary btn-block bluebtn" })
+                    @Html.ActionLink("Delete", "RemoveMovie", "Admin",
+                   new { movieId = movie.Id }, new { @class = "btn btn-primary btn-block delete" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

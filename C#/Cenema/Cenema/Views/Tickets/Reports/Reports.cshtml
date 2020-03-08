@@ -1,0 +1,25 @@
+﻿@using Cenema.Models.Tickets
+@using Cenema.Models.Reports
+@using Cenema.Utils
+@{
+    var types = EnumUtil.GetValues<ReportType>();
+}
+
+<h1>Build report</h1>
+@using (Html.BeginForm("BuildReport", "Reports"))
+{
+    <div class="form-group">
+        <label>Report type:</label>
+        <select name="ReportType" id="ReportType" class="form-control js-report-selector">
+            <option value="">Please select report type</option>
+            @foreach (var type in types)
+            {
+                <option value="@type">@type</option>
+            }
+        </select>
+    </div>
+    <div class="js-report-form-container">
+
+    </div>
+    <input type="submit" value="Build report" class="btn btn-success">
+}

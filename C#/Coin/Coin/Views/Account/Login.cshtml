@@ -1,0 +1,18 @@
+﻿@model Coin.Models.LoginModel
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+    <h2>Enter your data for Log In</h2>
+    <div>
+        @Html.LabelFor(m => m.Email)
+        @Html.EditorFor(m => m.Email)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Password)
+        @Html.PasswordFor(m => m.Password)
+    </div>
+    <div>
+        @Html.ValidationMessageFor(m => m.Email)
+    </div>
+    <input type="submit" value="Login">
+}

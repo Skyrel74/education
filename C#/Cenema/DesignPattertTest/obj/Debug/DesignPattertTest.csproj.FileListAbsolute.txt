@@ -1,0 +1,7 @@
+C:\Education\Cenema\DesignPattertTest\bin\Debug\DesignPattertTest.exe.config
+C:\Education\Cenema\DesignPattertTest\bin\Debug\DesignPattertTest.exe
+C:\Education\Cenema\DesignPattertTest\bin\Debug\DesignPattertTest.pdb
+C:\Education\Cenema\DesignPattertTest\obj\Debug\DesignPattertTest.csprojAssemblyReference.cache
+C:\Education\Cenema\DesignPattertTest\obj\Debug\DesignPattertTest.csproj.CoreCompileInputs.cache
+C:\Education\Cenema\DesignPattertTest\obj\Debug\DesignPattertTest.exe
+C:\Education\Cenema\DesignPattertTest\obj\Debug\DesignPattertTest.pdb

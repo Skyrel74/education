@@ -1,0 +1,123 @@
+{
+  "Movies": [
+    {
+      "Id": 1,
+      "Title": "Once Upon a Time In Hollywood",
+      "Description": "Quentin Tarantino’s Once Upon a Time... in Hollywood visits 1969 Los Angeles, where everything is changing, as TV star Rick Dalton (Leonardo DiCaprio) and his longtime stunt double Cliff Booth (Brad Pitt) make their way around an industry they hardly recognize anymore. The ninth film from the writer-director features a large ensemble cast and multiple storylines in a tribute to the final moments of Hollywood’s golden age.",
+      "Duration": 161,
+      "Genres": [
+        0,
+        1
+      ],
+      "MinAge": 18,
+      "Director": "Quentin Tarantino",
+      "ImgUrl": "https://fokus.comfortkino.ru/upload/iblock/e41/e41e4d90e04ebed963e2ee0273c1efe9.jpg",
+      "Rating": 7.6,
+      "ReleseDate": 2019
+    },
+    {
+      "Id": 2,
+      "Title": "Fight Club",
+      "Description": "A depressed man (Edward Norton) suffering from insomnia meets a strange soap salesman named Tyler Durden (Brad Pitt) and soon finds himself living in his squalid house after his perfect apartment is destroyed. The two bored men form an underground club with strict rules and fight other men who are fed up with their mundane lives. Their perfect partnership frays when Marla (Helena Bonham Carter), a fellow support group crasher, attracts Tyler's attention.",
+      "Duration": 151,
+      "Genres": [
+        0,
+        1
+      ],
+      "MinAge": 18,
+      "Director": "David Fincher",
+      "ImgUrl": "https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
+      "Rating": 8.8,
+      "ReleseDate": 1999
+    },
+    {
+      "Id": 3,
+      "Title": "Inception",
+      "Description": "Dom Cobb (Leonardo DiCaprio) is a thief with the rare ability to enter people's dreams and steal their secrets from their subconscious. His skill has made him a hot commodity in the world of corporate espionage but has also cost him everything he loves. Cobb gets a chance at redemption when he is offered a seemingly impossible task: Plant an idea in someone's mind. If he succeeds, it will be the perfect crime, but a dangerous enemy anticipates Cobb's every move.",
+      "Duration": 148,
+      "Genres": [
+        0,
+        1
+      ],
+      "MinAge": 18,
+      "Director": "Christopher Nolan",
+      "ImgUrl": "https://is2-ssl.mzstatic.com/image/thumb/Video113/v4/83/84/eb/8384eb90-6fa0-1a28-a838-b23437efd244/pr_source.lsr/268x0w.jpg",
+      "Rating": 8.8,
+      "ReleseDate": 2010
+    },
+    {
+      "Id": 4,
+      "Title": "Kill Bill: Volume 1",
+      "Description": "A former assassin, known simply as The Bride (Uma Thurman), wakes from a coma four years after her jealous ex-lover Bill (David Carradine) attempts to murder her on her wedding day. Fueled by an insatiable desire for revenge, she vows to get even with every person who contributed to the loss of her unborn child, her entire wedding party, and four years of her life. After devising a hit list, The Bride sets off on her quest, enduring unspeakable injury and unscrupulous enemies.",
+      "Duration": 112,
+      "Genres": [
+        0
+      ],
+      "MinAge": 18,
+      "Director": "Quentin Tarantino",
+      "ImgUrl": "http://t1.gstatic.com/images?q=tbn:ANd9GcRZU0dTKm9Za0BhD7BiugB1UvByR615pavx4_0rnJHagCty7AcX",
+      "Rating": 8.1,
+      "ReleseDate": 2003
+    }
+  ],
+  "Halls": [
+    {
+      "Id": 1,
+      "Name": "Зал 1",
+      "Places": 55
+    },
+    {
+      "Id": 2,
+      "Name": "Зал 2",
+      "Places": 100
+    },
+    {
+      "Id": 3,
+      "Name": "Зал 8",
+      "Places": 145
+    },
+    {
+      "Id": 4,
+      "Name": "Зал 12",
+      "Places": 155
+    }
+  ],
+  "TimeSlots": [
+    {
+      "Id": 1,
+      "StartTime": "2019-08-26T18:00:00",
+      "Coast": 150.0,
+      "MovieId": 1,
+      "HallId": 1,
+      "Format": 2,
+      "RequestedSeats": null
+    },
+    {
+      "Id": 2,
+      "StartTime": "2019-08-26T18:30:00",
+      "Coast": 350.0,
+      "MovieId": 3,
+      "HallId": 2,
+      "Format": 0,
+      "RequestedSeats": null
+    },
+    {
+      "Id": 3,
+      "StartTime": "2019-08-26T21:00:00",
+      "Coast": 220.0,
+      "MovieId": 4,
+      "HallId": 1,
+      "Format": 1,
+      "RequestedSeats": null
+    },
+    {
+      "Id": 4,
+      "StartTime": "2019-10-09T22:10:00",
+      "Coast": 140.0,
+      "MovieId": 2,
+      "HallId": 3,
+      "Format": 0,
+      "RequestedSeats": null
+    }
+  ]
+}

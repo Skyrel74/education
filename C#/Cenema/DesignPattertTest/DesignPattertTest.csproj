@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A640ADE-D9E5-4836-AB2B-FC3F8C28663A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DesignPattertTest</RootNamespace>
+    <AssemblyName>DesignPattertTest</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BehaviorPatterns\Strategy\Implementations\PetrolEngine.cs" />
+    <Compile Include="BehaviorPatterns\Strategy\Implementations\ElectricEngine.cs" />
+    <Compile Include="BehaviorPatterns\Strategy\Implementations\HybridCar.cs" />
+    <Compile Include="BehaviorPatterns\Strategy\Interfaces\IMovable.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Implementations\OsxButton.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Implementations\WinButton.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Implementations\OsxProgressBar.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Implementations\OsxFactory.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Implementations\WinFactory.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Implementations\WinProgressBar.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Intefaces\IButton.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Intefaces\IGUIFactory.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Intefaces\IProgressBar.cs" />
+    <Compile Include="CreationalPatterns\FactoryMethod\AbstractClasses\ButtonCreater.cs" />
+    <Compile Include="CreationalPatterns\FactoryMethod\Implementations\OsxCrossplatformButton.cs" />
+    <Compile Include="CreationalPatterns\FactoryMethod\Implementations\OsxButtonCreater.cs" />
+    <Compile Include="CreationalPatterns\FactoryMethod\Implementations\WinButtonCreater.cs" />
+    <Compile Include="CreationalPatterns\FactoryMethod\Implementations\WinCrossplatformButton.cs" />
+    <Compile Include="CreationalPatterns\FactoryMethod\Interfaces\ICrossplatformButton.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

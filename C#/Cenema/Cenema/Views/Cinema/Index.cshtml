@@ -1,0 +1,19 @@
+﻿@model Cenema.Models.CinemaViewModel
+
+Hello world!
+<p />
+ViewData: @ViewData["Param"]
+<p />
+ViewBag: @ViewBag.Param
+
+@section Author
+{
+    @Model.Author
+}
+
+@if (!string.IsNullOrEmpty(Model.Author))
+{
+    <text>
+        Author is specified
+    </text>
+}
